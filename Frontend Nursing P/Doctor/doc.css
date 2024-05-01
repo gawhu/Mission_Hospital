@@ -1,0 +1,99 @@
+.additional-info .card ul li {
+    border-bottom: 1px solid #ddd; /* Gray border for clinic hours */
+}
+
+/* Additional styling for the additional information */
+.additional-info .card {
+    border: 1px solid #ddd; /* Gray border for the card */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Add some space between cards */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add a subtle shadow */
+}
+
+.additional-info .card-body {
+    background-color: #f9f9f9; /* Light gray background for card body */
+    border-bottom: 1px solid #ddd; /* Gray border at the bottom of card body */
+    padding: 15px; /* Add some padding */
+}
+
+.additional-info .card-title {
+    margin-bottom: 10px; /* Add some space below card title */
+    font-weight: bold; /* Make card title bold */
+}
+
+.additional-info .card-text {
+    margin-bottom: 0; /* Remove default margin for card text */
+}
+
+.additional-info .list-group-item {
+    padding: 10px; /* Add some padding to list items */
+}
+
+/* Add space below each doctor's information */
+.doc-panel-item {
+    margin-bottom: 40px;
+}
+
+/* Add space below each additional information card */
+.additional-info {
+    margin-top: 20px;
+    .contact-container {
+        display: flex;
+        width: 90%;
+        margin: 20px auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        font-family: Arial, sans-serif;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #f9f9f9;
+    }
+}
+
+    /* doctors panel */
+.doc-panel-inner{
+    margin-top: 8rem;
+}
+.doc-panel-item{
+    margin-bottom: 6rem;
+}
+.doc-panel-item:last-child{
+    margin-bottom: 0;
+}
+.doc-panel-item .img{
+    position: relative;
+    height: 440px;
+    background-color: var(--light-gray);
+    overflow: hidden;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+}
+.doc-panel-item .img .info{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+}
+.doc-panel-item .img{
+    max-width: 357px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.doc-panel-item:hover .info{
+    bottom: 0;
+}
+.doc-img{
+    width: 300px;  
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
